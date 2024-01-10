@@ -1,0 +1,153 @@
+/* Body Styles */
+body {
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #ee1c47;;
+}
+
+.title span{
+   color: #111;
+}
+
+.icon-cart {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-cart:hover {
+    color: #ee1c47;
+    transform: scale(0.9,ease);
+}
+
+.icon-cart svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+/* Product Styles */
+.listProduct {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    /* padding: 15px; */
+    background-color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.product-image img:hover {
+    transition: all 0.42s ease;
+}
+
+.add-to-cart {
+    display: inline-block;
+    color: #111;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: 2px solid black;
+    padding: 12px 25px;
+    transition: all .42s ease;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+/* Cart Tab Styles */
+.cartTab {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 300px;
+    height: 100%;
+    background: #edfff1;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.cartTab.show {
+    right: 0;
+}
+
+.cartTab h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cartTab h1 span{
+    color: #ee1c47;
+}
+
+.listCart {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    text-align: center;
+}
+
+.close,
+.checkOut {
+    display: inline-block;
+    color: #111;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: 2px solid black;
+    padding: 12px 25px;
+    transition: all .42s ease;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.close:hover,
+.checkOut:hover {
+    background-color: #111;
+    color: #fff;
+}

@@ -1,0 +1,112 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+  }
+  
+  body {
+    background-color: #f3f4f6;
+  }
+  
+  .wrapper {
+    max-width: 400px; /* Adjusted width for signup page */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+  }
+  
+  .input-box {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="submit"],
+  input[type="checkbox"] {
+    width: calc(100% - 26px); /* Adjusted width for input fields */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #111;
+  }
+  
+  small {
+    display: block;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  .text {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .text a {
+    color: #ee1c47;
+  }
+  
+  .text a:hover {
+    text-decoration: underline;
+  }
+
+  .policy {
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  
+  .policy h3{
+    padding: 0%;
+    margin-left: 7px;
+  }
+
+  .policy input[type="checkbox"] {
+    margin: 0px;
+    width: 14px;
+    height: auto;
+  }
+  
+  
+  /* Responsive styles */
+  @media screen and (max-width: 600px) {
+    .wrapper {
+      max-width: 90%; /* Adjusted width for smaller screens */
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="submit"],
+    input[type="checkbox"] {
+      width: calc(100% - 20px); /* Adjusted width for smaller screens */
+    }
+  }
+  
